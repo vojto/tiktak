@@ -5,7 +5,7 @@ color1 = #41afcb
 text = #fff
 faded_text = #7fcce0
 
-body, input
+body, input, textarea
   font-family 'Open Sans', sans-serif;
   color faded_text
   font-size 16px
@@ -30,6 +30,7 @@ header
     margin auto
     width 108px
     height 34px
+    cursor pointer
 
     image '/logo.png' 108px 34px
 
@@ -80,3 +81,64 @@ p
   text-align center
 
 
+
+.story
+  background #fff
+  margin 0 60px
+  padding 20px 20px
+  box-shadow 0 4px 10px rgba(0,0,0,0.25)
+  margin-bottom 30px
+
+  .content
+    width 80%
+    margin auto
+
+  &:nth-child(even)
+    transform rotate(0.5deg)
+
+
+  &:nth-child(odd)
+    transform rotate(-0.5deg)
+
+  .author
+    display block
+    margin-bottom 10px
+
+  strong
+    font-weight 400
+    color #000
+
+  em, a
+    color color1
+    font-style normal
+
+  h2
+    text-align center
+    font-weight 600
+    color color1
+
+  textarea
+    width 80%
+    height 100px
+    border none
+    background #eee
+    color #000
+    margin-bottom 20px
+    padding 10px
+
+    &:focus
+      outline-width 0
+
+  input[type=submit]
+    background color1
+    color #fff
+    cursor pointer
+    box-shadow none
+
+  .replies
+    margin-bottom 15px
+
+    .reply
+      padding 5px 0
+      width 80%
+      margin auto
