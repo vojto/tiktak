@@ -8,6 +8,7 @@ faded_text = #7fcce0
 body, input
   font-family 'Open Sans', sans-serif;
   color faded_text
+  font-size 16px
 
 a
   color text
@@ -48,7 +49,6 @@ form
 
   input
     padding 10px
-    font-size 14px
     text-align center
 
     &:focus
@@ -59,6 +59,7 @@ form
       color #fff
       background transparent
       border 1px solid faded_text
+      transition border-color 0.25s linear
 
       &::-webkit-input-placeholder
         color faded_text
